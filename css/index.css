@@ -34,6 +34,7 @@ html {
   padding: 1rem;
   background-color: yellow;
   width: 100%;
+  display: flex;
 }
 
 .sliderTop p{
@@ -46,15 +47,11 @@ html {
   left: 0%;
 }
 
+
 @keyframes sliderToop {
-  /* 0% {
-    transform: translateX(0%); 
-  }
-  100% {
-    transform: translateX(100%); 
-  } */
+
   0%{
-    left: -10%;
+    left: -20%;
     animation-timing-function: ease-out; 
   } 100% {
     left: 103%;
@@ -819,6 +816,15 @@ header .icons #menu-bars {
     grid-template-columns: repeat(1,1fr);
   }
 
+  @keyframes sliderToop {
 
+    0%{
+      left: -80%;
+      animation-timing-function: ease-out; 
+    } 100% {
+      left: 103%;
+      animation-timing-function: linear; /* Vitesse constante dans la première moitié */
+    }
+  }
   
 }
